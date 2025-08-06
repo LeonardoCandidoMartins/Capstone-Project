@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+:root{
+  --background-primary  : #f9f9f9;
+  --background-secondary: #000;
+  --color-primary       : #383838;
+  --color-secondary     : #f2f2f2;
+  
+  --botao-cor           : #363636;
+  --botao-cor-hover     : #000;
+
+  /* --navbar-background   : #1e1e2f; */
+  --navbar-background   : #0e0e15;
+  --navbar-link-color   : #ffffff;
+  --navbar-link-hover   : #00bcd4;
+  --navbar-padding      : 1rem;
+  /* --navbar-background: #1e1e2f;
+  --navbar-link-color: #ffffff;
+  --navbar-link-hover: #00bcd4;
+  --navbar-padding: 1rem; */
+
+  
+  /* --background-primary: #2c2f4a; */
+  /* --color-primary: #ffffff; */
+  --card-background: #ffffff;
+  --accent-color: #00bcd4;
+
+  /* home */
+  --botao-cor: #5c8374;
+  --fundo-claro: #f9f9f9;
+  --texto-principal: #1f2937;
+
+  /* --background-primary: #f3f4f6; */
+  --text-primary: #1f2937;
+  /* --accent-color: #6366f1; */
+  --card-bg: #ffffff;
+  
+  
+
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 60px; /* reserva espaço para o nav */
+}
+
+/* body{
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+

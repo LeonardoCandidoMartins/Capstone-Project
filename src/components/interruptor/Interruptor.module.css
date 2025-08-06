@@ -1,0 +1,62 @@
+.switch {
+  /* AQUI ESTÁ A MÁGICA!
+    Definimos uma variável chamada --tamanho-switch.
+    Para mudar o tamanho de TODOS os seletores que usam esta classe,
+    basta alterar este valor.
+  */
+  --tamanho-switch: 16px; /* <-- MODIFIQUE APENAS AQUI */
+/* 18px*/
+  /* Agora, o font-size lê o valor da variável */
+  font-size: var(--tamanho-switch);
+
+  position: relative;
+  display: inline-block;
+  width: 3.4em;   /* Relativo ao font-size (que agora vem da variável) */
+  height: 2em;    /* Relativo ao font-size */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2em; /* Relativo ao font-size */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;      /* Relativo ao font-size */
+  width: 1.5em;       /* Relativo ao font-size */
+  left: 0.25em;       /* Relativo ao font-size */
+  bottom: 0.25em;     /* Relativo ao font-size */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.4em); /* Relativo ao font-size */
+  -ms-transform: translateX(1.4em);
+  transform: translateX(1.4em);
+}
